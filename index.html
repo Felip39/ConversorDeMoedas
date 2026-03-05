@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <script src="scripts.js" defer></script>
+    <title>Conversor de Moedas DevClub</title>
+</head>
+
+<body>
+
+    <img class="logo" src="./assets/logo.gif" alt="Logo do Conversor de Moedas">
+
+    <main>
+        <label>
+            Converter <b>de</b>
+            <select class="currency-select-real">
+                <option value="real">R$ Real</option>
+                <option value="dolar">US Dólar</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra Esterlina</option>
+                <option value="iene">¥ Iene Japonês</option>
+
+            </select>
+        </label>
+
+        <label>
+            Converter <b>para</b>
+            <select class="currency-select-dolar-euro">
+                <option value="dolar">US Dólar</option>
+                <option value="euro">€ Euro</option>
+                <option value="real">R$ Real</option>
+                <option value="libra">£ Libra Esterlina</option>
+                <option value="iene">¥ Iene Japonês</option>
+
+            </select>
+        </label>
+
+        <label>
+            Valor
+            <input class="input-currency" type="number" placeholder="Digite um valor">
+        </label>
+
+        <button class="convertbutton">Converter Moeda</button>
+
+        <section>
+            <div class="currency-box">
+                <img src="./assets/Real.png" alt="Imagem do Real">
+                <p class="currencyReal">Real</p>
+                <p class="currency-value-real">R$ 0,00</p>
+            </div>
+
+            <img class="arrow" src="./assets/Arrow.png" alt="Seta de conversão">
+
+            <div class="currency-box">
+                <img src="./assets/Dolar.png" alt="Imagem do Dólar">
+                <p class="currencyDolar">Dólar</p>
+                <p class="currency-value-dolar">US$ 0,00</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
